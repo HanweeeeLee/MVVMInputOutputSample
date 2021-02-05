@@ -15,5 +15,10 @@ class ViewController: UIViewController {
     }
 
 
+    @IBAction func startTestAction(_ sender: Any) {
+        print("날씨 할라다가 귀찮아서 Git으로 변경")
+        let vc = WeatherViewController(nibName: "WeatherViewController", bundle: nil)
+        self.navigationController?.pushViewController(vc, animated: true)
+    }
 }
 
