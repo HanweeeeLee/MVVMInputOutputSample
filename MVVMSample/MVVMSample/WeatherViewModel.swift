@@ -39,6 +39,7 @@ class WeatherViewModel: WeatherViewModelInput, WeatherViewModelOutput {
     
     //MARK: property
     var disposeBag: DisposeBag = DisposeBag()
+    var gitHubRepoService: GithubRepoService = GithubRepoService()
     
     //MARK: life cycle
     init() {
@@ -55,25 +56,15 @@ class WeatherViewModel: WeatherViewModelInput, WeatherViewModelOutput {
             .subscribe(on: ConcurrentDispatchQueueScheduler.init(qos: .default))
             .subscribe(onNext: { searchTxt in
                 self.isLoading.onNext(true)
-                DataApiManager.requestGETURLRx("https://api.github.com/search/repositories?q=\(searchTxt)&sort=start&page=0", headers: nil)
-                    .subscribe { (response) in
-                        var repoModelArr: [RepoModel] = []
-                        for i in 0..<response["items"].count {
-                            if let model: RepoModel = RepoModel.fromJson(jsonData: response["items"][i].rawString()?.data(using: .utf8), object: RepoModel()) {
-                                repoModelArr.append(model)
-                            }
-                        }
+                self.gitHubRepoService.getGitRepos(text: searchTxt, page: 0)
+                    .subscribe(onNext: { repoModelArr in
                         self.gitHubRepositories.onNext(repoModelArr)
                         self.isLoading.onNext(false)
-                } onError: { (err) in
-                    print("err:\(err)")
-                    self.error = Observable.just(err as NSError)
-                } onCompleted: {
-                    
-                } onDisposed: {
-                    
-                }
-                .disposed(by: self.disposeBag)
+                    }, onError: { err in
+                        print("err:\(err)")
+                        self.error = Observable.just(err as NSError)
+                    })
+                    .disposed(by: self.disposeBag)
             })
             .disposed(by: self.disposeBag)
     }

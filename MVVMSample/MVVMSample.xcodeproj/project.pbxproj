@@ -21,6 +21,7 @@
 		785D6AC025CCD8F000A13B1B /* WeatherTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 785D6ABE25CCD8F000A13B1B /* WeatherTableViewCell.xib */; };
 		785D6AD225CCFB8B00A13B1B /* Define.swift in Sources */ = {isa = PBXBuildFile; fileRef = 785D6AD125CCFB8B00A13B1B /* Define.swift */; };
 		785D6AD625CD0C2200A13B1B /* RepoModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 785D6AD525CD0C2200A13B1B /* RepoModel.swift */; };
+		78654BFE25EFA346001EF987 /* GithubRepoService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78654BFD25EFA346001EF987 /* GithubRepoService.swift */; };
 		78B3FB15EACC43F86F5B82A4 /* Pods_MVVMSample.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BC9E9FE0FD35DE7D351F0E65 /* Pods_MVVMSample.framework */; };
 /* End PBXBuildFile section */
 
@@ -42,6 +43,7 @@
 		785D6ABE25CCD8F000A13B1B /* WeatherTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = WeatherTableViewCell.xib; sourceTree = "<group>"; };
 		785D6AD125CCFB8B00A13B1B /* Define.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Define.swift; sourceTree = "<group>"; };
 		785D6AD525CD0C2200A13B1B /* RepoModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RepoModel.swift; sourceTree = "<group>"; };
+		78654BFD25EFA346001EF987 /* GithubRepoService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GithubRepoService.swift; sourceTree = "<group>"; };
 		85FE496188DEF9C5B8DE00B4 /* Pods-MVVMSample.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MVVMSample.release.xcconfig"; path = "Target Support Files/Pods-MVVMSample/Pods-MVVMSample.release.xcconfig"; sourceTree = "<group>"; };
 		BC9E9FE0FD35DE7D351F0E65 /* Pods_MVVMSample.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MVVMSample.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -109,6 +111,7 @@
 				785D6AB625CCD85700A13B1B /* WeatherViewController.xib */,
 				785D6AB525CCD85700A13B1B /* WeatherViewController.swift */,
 				785D6ABA25CCD86400A13B1B /* WeatherViewModel.swift */,
+				78654BFD25EFA346001EF987 /* GithubRepoService.swift */,
 				785D6ABE25CCD8F000A13B1B /* WeatherTableViewCell.xib */,
 				785D6ABD25CCD8F000A13B1B /* WeatherTableViewCell.swift */,
 			);
@@ -257,6 +260,7 @@
 			files = (
 				785D6A7B25CCD3D500A13B1B /* ViewController.swift in Sources */,
 				785D6ABB25CCD86400A13B1B /* WeatherViewModel.swift in Sources */,
+				78654BFE25EFA346001EF987 /* GithubRepoService.swift in Sources */,
 				785D6AD225CCFB8B00A13B1B /* Define.swift in Sources */,
 				785D6ABF25CCD8F000A13B1B /* WeatherTableViewCell.swift in Sources */,
 				785D6AB725CCD85700A13B1B /* WeatherViewController.swift in Sources */,
