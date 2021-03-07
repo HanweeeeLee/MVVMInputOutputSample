@@ -7,7 +7,7 @@
 
 import UIKit
 
-class WeatherTableViewCell: UITableViewCell {
+class GithubRepoTableViewCell: UITableViewCell {
 
     @IBOutlet weak var name: UILabel!
     override func awakeFromNib() {

@@ -1,5 +1,5 @@
 //
-//  WeatherViewController.swift
+//  GithubRepoViewController.swift
 //  MVVMSample
 //
 //  Created by hanwe on 2021/02/05.
@@ -9,7 +9,7 @@ import UIKit
 import RxSwift
 import RxCocoa
 
-class WeatherViewController: UIViewController {
+class GithubRepoViewController: UIViewController {
 
     //MARK: Interface Builder
     @IBOutlet weak var searchBar: UISearchBar!
@@ -17,7 +17,7 @@ class WeatherViewController: UIViewController {
     @IBOutlet weak var indicator: UIActivityIndicatorView!
     
     //MARK: property
-    var viewModel: WeatherViewModel = WeatherViewModel()
+    var viewModel: GithubRepoViewModel = GithubRepoViewModel()
     var disposeBag: DisposeBag = DisposeBag()
     
     
@@ -37,7 +37,7 @@ class WeatherViewController: UIViewController {
     func initUI() {
 //        self.tableView.delegate = self
 //        self.tableView.dataSource = self
-//        self.tableView.register(UINib(nibName: "WeatherTableViewCell", bundle: nil), forCellReuseIdentifier: "WeatherTableViewCell")
+        self.tableView.register(UINib(nibName: "GithubRepoTableViewCell", bundle: nil), forCellReuseIdentifier: "GithubRepoTableViewCell")
         self.indicator.isHidden = true
     }
     
@@ -52,7 +52,7 @@ class WeatherViewController: UIViewController {
         viewModel.gitHubRepositories
             .observe(on: MainScheduler.instance)
             .bind(to: tableView.rx.items) { tableView, row, githubRepository in
-                let cell = UITableViewCell(style: .subtitle, reuseIdentifier: "subtitle")
+                let cell = UITableViewCell(style: .subtitle, reuseIdentifier: "GithubRepoTableViewCell")
                 cell.textLabel?.text = "\(githubRepository.fullName)"
                 cell.detailTextLabel?.textColor = UIColor.lightGray
                 cell.detailTextLabel?.text = "\(githubRepository.description)"

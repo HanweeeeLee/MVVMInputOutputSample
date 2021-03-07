@@ -10,23 +10,35 @@ import RxSwift
 import RxCocoa
 import SwiftyJSON
 
-protocol WeatherViewModelInput {
+protocol GithubRepoViewModelInput {
     var searchTextRelay: PublishRelay<String> { get }
 }
 
-protocol WeatherViewModelOutput {
+protocol GithubRepoViewModelOutput {
     var navigationBarTitle: Observable<String> { get }
     var gitHubRepositories: PublishSubject<[RepoModel]> { get } // model
     var isLoading: PublishSubject<Bool> { get }
     var error: Observable<NSError> { get }
 }
 
-protocol WeatherViewModelType {
-    var inputs: WeatherViewModelInput { get }
-    var outputs: WeatherViewModelOutput { get }
+protocol GithubRepoViewModelType {
+    var inputs: GithubRepoViewModelInput { get }
+    var outputs: GithubRepoViewModelOutput { get }
 }
 
-class WeatherViewModel: WeatherViewModelInput, WeatherViewModelOutput {
+class GithubRepoViewModel: GithubRepoViewModelType, GithubRepoViewModelInput, GithubRepoViewModelOutput {
+    var inputs: GithubRepoViewModelInput {
+        get {
+            return self
+        }
+    }
+    
+    var outputs: GithubRepoViewModelOutput {
+        get {
+            return self
+        }
+    }
+    
     
     //MARK: WeatherViewModelInput property
     var searchTextRelay: PublishRelay<String> = .init()

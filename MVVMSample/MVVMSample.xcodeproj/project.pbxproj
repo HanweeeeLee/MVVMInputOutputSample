@@ -14,11 +14,11 @@
 		785D6A8025CCD3D800A13B1B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 785D6A7F25CCD3D800A13B1B /* Assets.xcassets */; };
 		785D6A8325CCD3D800A13B1B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 785D6A8125CCD3D800A13B1B /* LaunchScreen.storyboard */; };
 		785D6AA325CCD59B00A13B1B /* DataApiManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 785D6AA225CCD59B00A13B1B /* DataApiManager.swift */; };
-		785D6AB725CCD85700A13B1B /* WeatherViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 785D6AB525CCD85700A13B1B /* WeatherViewController.swift */; };
-		785D6AB825CCD85700A13B1B /* WeatherViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 785D6AB625CCD85700A13B1B /* WeatherViewController.xib */; };
-		785D6ABB25CCD86400A13B1B /* WeatherViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 785D6ABA25CCD86400A13B1B /* WeatherViewModel.swift */; };
-		785D6ABF25CCD8F000A13B1B /* WeatherTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 785D6ABD25CCD8F000A13B1B /* WeatherTableViewCell.swift */; };
-		785D6AC025CCD8F000A13B1B /* WeatherTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 785D6ABE25CCD8F000A13B1B /* WeatherTableViewCell.xib */; };
+		785D6AB725CCD85700A13B1B /* GithubRepoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 785D6AB525CCD85700A13B1B /* GithubRepoViewController.swift */; };
+		785D6AB825CCD85700A13B1B /* GithubRepoViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 785D6AB625CCD85700A13B1B /* GithubRepoViewController.xib */; };
+		785D6ABB25CCD86400A13B1B /* GithubRepoViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 785D6ABA25CCD86400A13B1B /* GithubRepoViewModel.swift */; };
+		785D6ABF25CCD8F000A13B1B /* GithubRepoTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 785D6ABD25CCD8F000A13B1B /* GithubRepoTableViewCell.swift */; };
+		785D6AC025CCD8F000A13B1B /* GithubRepoTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 785D6ABE25CCD8F000A13B1B /* GithubRepoTableViewCell.xib */; };
 		785D6AD225CCFB8B00A13B1B /* Define.swift in Sources */ = {isa = PBXBuildFile; fileRef = 785D6AD125CCFB8B00A13B1B /* Define.swift */; };
 		785D6AD625CD0C2200A13B1B /* RepoModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 785D6AD525CD0C2200A13B1B /* RepoModel.swift */; };
 		78654BFE25EFA346001EF987 /* GithubRepoService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78654BFD25EFA346001EF987 /* GithubRepoService.swift */; };
@@ -36,11 +36,11 @@
 		785D6A8225CCD3D800A13B1B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		785D6A8425CCD3D800A13B1B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		785D6AA225CCD59B00A13B1B /* DataApiManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DataApiManager.swift; sourceTree = "<group>"; };
-		785D6AB525CCD85700A13B1B /* WeatherViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeatherViewController.swift; sourceTree = "<group>"; };
-		785D6AB625CCD85700A13B1B /* WeatherViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = WeatherViewController.xib; sourceTree = "<group>"; };
-		785D6ABA25CCD86400A13B1B /* WeatherViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeatherViewModel.swift; sourceTree = "<group>"; };
-		785D6ABD25CCD8F000A13B1B /* WeatherTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeatherTableViewCell.swift; sourceTree = "<group>"; };
-		785D6ABE25CCD8F000A13B1B /* WeatherTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = WeatherTableViewCell.xib; sourceTree = "<group>"; };
+		785D6AB525CCD85700A13B1B /* GithubRepoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GithubRepoViewController.swift; sourceTree = "<group>"; };
+		785D6AB625CCD85700A13B1B /* GithubRepoViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = GithubRepoViewController.xib; sourceTree = "<group>"; };
+		785D6ABA25CCD86400A13B1B /* GithubRepoViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GithubRepoViewModel.swift; sourceTree = "<group>"; };
+		785D6ABD25CCD8F000A13B1B /* GithubRepoTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GithubRepoTableViewCell.swift; sourceTree = "<group>"; };
+		785D6ABE25CCD8F000A13B1B /* GithubRepoTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = GithubRepoTableViewCell.xib; sourceTree = "<group>"; };
 		785D6AD125CCFB8B00A13B1B /* Define.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Define.swift; sourceTree = "<group>"; };
 		785D6AD525CD0C2200A13B1B /* RepoModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RepoModel.swift; sourceTree = "<group>"; };
 		78654BFD25EFA346001EF987 /* GithubRepoService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GithubRepoService.swift; sourceTree = "<group>"; };
@@ -108,12 +108,12 @@
 				785D6A7F25CCD3D800A13B1B /* Assets.xcassets */,
 				785D6A8125CCD3D800A13B1B /* LaunchScreen.storyboard */,
 				785D6A8425CCD3D800A13B1B /* Info.plist */,
-				785D6AB625CCD85700A13B1B /* WeatherViewController.xib */,
-				785D6AB525CCD85700A13B1B /* WeatherViewController.swift */,
-				785D6ABA25CCD86400A13B1B /* WeatherViewModel.swift */,
+				785D6AB625CCD85700A13B1B /* GithubRepoViewController.xib */,
+				785D6AB525CCD85700A13B1B /* GithubRepoViewController.swift */,
+				785D6ABA25CCD86400A13B1B /* GithubRepoViewModel.swift */,
 				78654BFD25EFA346001EF987 /* GithubRepoService.swift */,
-				785D6ABE25CCD8F000A13B1B /* WeatherTableViewCell.xib */,
-				785D6ABD25CCD8F000A13B1B /* WeatherTableViewCell.swift */,
+				785D6ABE25CCD8F000A13B1B /* GithubRepoTableViewCell.xib */,
+				785D6ABD25CCD8F000A13B1B /* GithubRepoTableViewCell.swift */,
 			);
 			path = MVVMSample;
 			sourceTree = "<group>";
@@ -202,8 +202,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				785D6A8325CCD3D800A13B1B /* LaunchScreen.storyboard in Resources */,
-				785D6AB825CCD85700A13B1B /* WeatherViewController.xib in Resources */,
-				785D6AC025CCD8F000A13B1B /* WeatherTableViewCell.xib in Resources */,
+				785D6AB825CCD85700A13B1B /* GithubRepoViewController.xib in Resources */,
+				785D6AC025CCD8F000A13B1B /* GithubRepoTableViewCell.xib in Resources */,
 				785D6A8025CCD3D800A13B1B /* Assets.xcassets in Resources */,
 				785D6A7E25CCD3D500A13B1B /* Main.storyboard in Resources */,
 			);
@@ -259,11 +259,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				785D6A7B25CCD3D500A13B1B /* ViewController.swift in Sources */,
-				785D6ABB25CCD86400A13B1B /* WeatherViewModel.swift in Sources */,
+				785D6ABB25CCD86400A13B1B /* GithubRepoViewModel.swift in Sources */,
 				78654BFE25EFA346001EF987 /* GithubRepoService.swift in Sources */,
 				785D6AD225CCFB8B00A13B1B /* Define.swift in Sources */,
-				785D6ABF25CCD8F000A13B1B /* WeatherTableViewCell.swift in Sources */,
-				785D6AB725CCD85700A13B1B /* WeatherViewController.swift in Sources */,
+				785D6ABF25CCD8F000A13B1B /* GithubRepoTableViewCell.swift in Sources */,
+				785D6AB725CCD85700A13B1B /* GithubRepoViewController.swift in Sources */,
 				785D6AD625CD0C2200A13B1B /* RepoModel.swift in Sources */,
 				785D6A7725CCD3D500A13B1B /* AppDelegate.swift in Sources */,
 				785D6AA325CCD59B00A13B1B /* DataApiManager.swift in Sources */,
